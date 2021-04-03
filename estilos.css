@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;  
+  font-family: sans-serif;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.logo {
+  position: relative;
+  width: 37px;
+  height: 218px;
+  margin: 100px auto;
+  z-index: 1;
+  background: #000;
+  filter: drop-shadow(-10px -10px 0 #24f6f0) brightness(110%);
+  box-shadow: 11.6px 10px 0 0 #fe2d52;
+  top: -60px;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 37px solid #000;
+  border-top: 37px solid transparent;
+  border-radius: 50%;
+  top: 123px;
+  left: -137px;
+  transform: rotate(45deg);
+  filter: drop-shadow(16px 0 0 #fe2d52);
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 30px solid #000;
+  border-right: 30px solid transparent;
+  border-top: 30px solid transparent;
+  border-left: 30px solid transparent;
+  top: -100px;
+  right: -172px;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  z-index: -10;
+  filter: drop-shadow(14px 0 0 #fe2d52);
+}
+
+.letras {
+  font-size: 110px;
+}
+.o {
+  position: relative;
+  z-index: 1;
+}
+
+.o::before,
+.o::after {
+  content: "o";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-size: 105px;
+}
+
+.o::after {
+  color: #fe2d52;
+  top: 2px;
+  left: 5px;
+}
+
+.o::before {
+  color: #24f6f0;
+  content: "o";
+  top: 2px;
+  left: -5px;
+}
